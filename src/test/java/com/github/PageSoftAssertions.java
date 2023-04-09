@@ -8,17 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class PageSoftAssertions {
-    String junit5ExampleCode = "@ExtendWith({SoftAssertsExtension.class})\n" +
-            "class Tests {\n" +
-            "  @Test\n" +
-            "  void test() {\n" +
-            "    Configuration.assertionMode = SOFT;\n" +
-            "    open(\"page.html\");\n" +
-            "\n" +
-            "    $(\"#first\").should(visible).click();\n" +
-            "    $(\"#second\").should(visible).click();\n" +
-            "  }\n" +
-            "}";
+    String junit5ExampleCode = "@ExtendWith({SoftAssertsExtension.class})\n" + "class Tests {\n" + "  @Test\n" + "  void test() {\n" + "    Configuration.assertionMode = SOFT;\n" + "    open(\"page.html\");\n" + "\n" + "    $(\"#first\").should(visible).click();\n" + "    $(\"#second\").should(visible).click();\n" + "  }\n" + "}";
 
 
     @Test
